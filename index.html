@@ -1,30 +1,60 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
  <html lang="en">
  <body>
   <header>
-   <h1>About me🫠</h1>
-   <ul>
-    <nav>
-     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="style.css">
-     <li><a href="#">Home</a></li>    
-     <li><a href="#">Upgrade</a></li>
-     <li><a href="#">Blog</a></li>
-    </nav>
-   </ul>
+   <h1>Sammy bio</h1>
+   <nav>
+    <ul>
+     <li><a href="#">Home</a></li>
+     <li><a href="#">Services</a></li>
+     <li><a href="#">blog</a></li>
+    </ul>
+   </nav>
   </header>
-   <main>
-    <article>
-     <h2>David samuel</h2>
-     <p>I built this using my phone🙂</p>
-    </article>
-   </main>
-  <article>
-    <h2 style=color: White;>About us</h2>
-    <p style=color: White;>Related links</p>
-  </article>
   <main>
-  <p>&copy;2026</p>
+   <article>
+    <h2>My services</h2>
+    <p>Fill the form bellow to apply for lecture~@ uLEARNING</p>
+   </article>
   </main>
-  </body>
- </html>
+  <style>
+  body { background-color: grey;
+     }
+  </style>
+  <form action="/storage/emulated/0/Webpage.html"method"POST">
+   <!--Name input-->
+   <input type="text"id user name="users Name"placeholder="~@uLEARNING"></br>
+   <!--Message Area-->
+   <label for="user Message">Your Message</label><br>
+   <textarea id=name="userMessage"rows="10"cols="50"></textarea><br>
+   <!--Submit Button-->
+   <input type="submit"value="SEND">
+  </form>
+   <aside>
+   <p>Related links</p>
+   </aside>
+  <footer>
+   <p>&copy;2026 student Learning</p>
+  </footer>
+  <!--The Button-->
+  <button onclick="sayHello()">😀Click me</button>
+   <script>
+   //The Function (The instructions)
+  function sayHello(){alert("Lol it was just a prack😀 press ok and like our post on~@uLEARNING");
+  }
+  </script>
+  <!--The Heading and Button-->
+  <h1 id="statusText">You haven't liked this post yet💔.</h1>
+  <button id="likeBtn"onclick="toggleLike()">Like❤️</button>
+  <script>
+   function toggleLike(){//1.Find the elements on the page using their ID
+   let heading=document.getElementById("statusText");
+   let button=document.getElementById("likeBtn");
+   //2.Change their text and styles instantly
+   heading.innerText="Liked!";
+   button.style.backgroundColor="#007bff";
+   button.style.color="white";
+   }
+  </script>
+ </body>
+  </html>

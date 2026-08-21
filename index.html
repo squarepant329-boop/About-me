@@ -140,6 +140,20 @@
      </div>
     </div>
    </div>
+       </script>
+  <!--The Heading and Button-->
+  <h1 id="statusText">You haven't liked this post yet💔.</h1>
+  <button id="likeBtn"onclick="toggleLike()">Like❤️</button>
+  <script>
+   function toggleLike(){//1.Find the elements on the page using their ID
+   let heading=document.getElementById("statusText");
+   let button=document.getElementById("likeBtn");
+   //2.Change their text and styles instantly
+   heading.innerText="Liked!";
+   button.style.backgroundColor="#007bff";
+   button.style.color="white";
+   }
+  </script>
  
   
  </body>
